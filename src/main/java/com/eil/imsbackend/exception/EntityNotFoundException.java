@@ -1,6 +1,9 @@
 package com.eil.imsbackend.exception;
 
+import lombok.Getter;
+
 public class EntityNotFoundException extends RuntimeException{
+    @Getter
     private ErrorCodes errorCodes;
 
     public EntityNotFoundException(String message) {
