@@ -23,7 +23,7 @@ public class ArticleDTO {
 
     private CategoryDTO category;
 
-    public ArticleDTO fromEntity(Article article) {
+    public static ArticleDTO fromEntity(Article article) {
         if (article == null) {
             return null;
         }

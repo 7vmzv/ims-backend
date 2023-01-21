@@ -12,4 +12,6 @@ public interface ArticleService {
     ArticleDTO findByArticleCode(String articleCode);
 
     List<ArticleDTO> findAll();
+
+    void delete(Integer id);
 }

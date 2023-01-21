@@ -5,7 +5,6 @@ import com.eil.imsbackend.entities.Provider;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class ProviderDTO {
     private Address address;
 
     private String photo;
-    private String mail;
+    private String email;
     private String phoneNumber;
 
     @JsonIgnore
@@ -35,7 +34,7 @@ public class ProviderDTO {
                 .id(provider.getId())
                 .address(provider.getAddress())
                 .photo(provider.getPhoto())
-                .mail(provider.getMail())
+                .email(provider.getMail())
                 .phoneNumber(provider.getPhoneNumber())
                 .build();
     }
@@ -49,7 +48,7 @@ public class ProviderDTO {
         provider.setId(companyDTO.getId());
         provider.setAddress(companyDTO.getAddress());
         provider.setPhoto(companyDTO.getPhoto());
-        provider.setMail(companyDTO.getMail());
+        provider.setMail(companyDTO.getEmail());
         provider.setPhoneNumber(provider.getPhoneNumber());
         return provider;
     }
