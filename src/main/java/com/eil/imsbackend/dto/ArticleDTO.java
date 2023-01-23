@@ -3,12 +3,16 @@ package com.eil.imsbackend.dto;
 import com.eil.imsbackend.entities.Article;
 import com.eil.imsbackend.entities.Category;
 import jakarta.persistence.ManyToOne;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class ArticleDTO {
 

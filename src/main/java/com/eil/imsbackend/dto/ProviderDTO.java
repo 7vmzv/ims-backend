@@ -3,12 +3,16 @@ package com.eil.imsbackend.dto;
 import com.eil.imsbackend.entities.Address;
 import com.eil.imsbackend.entities.Provider;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class ProviderDTO {
     private Integer id;
