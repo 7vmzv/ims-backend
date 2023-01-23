@@ -13,6 +13,8 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class StkMvtDTO {
     private Integer id;

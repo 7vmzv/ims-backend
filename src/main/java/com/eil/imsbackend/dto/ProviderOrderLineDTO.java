@@ -2,10 +2,14 @@ package com.eil.imsbackend.dto;
 
 import com.eil.imsbackend.entities.Article;
 import com.eil.imsbackend.entities.ProviderOrderLine;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class ProviderOrderLineDTO {
     private Integer id;

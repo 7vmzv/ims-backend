@@ -1,12 +1,14 @@
 package com.eil.imsbackend.validator;
 
 import com.eil.imsbackend.dto.ArticleDTO;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ArticleValidator {
 
     public List<String> validate(ArticleDTO articleDTO) {
