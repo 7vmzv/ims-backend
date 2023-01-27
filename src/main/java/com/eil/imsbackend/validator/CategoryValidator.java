@@ -1,11 +1,13 @@
 package com.eil.imsbackend.validator;
 
 import com.eil.imsbackend.dto.CategoryDTO;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CategoryValidator {
     private static final String message = "Please entre a valid category code";
 
