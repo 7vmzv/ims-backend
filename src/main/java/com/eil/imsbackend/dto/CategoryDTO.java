@@ -22,7 +22,7 @@ public class CategoryDTO {
     private List<ArticleDTO> articles;
 
     //Category -> CategoryDTO
-    public CategoryDTO fromEntity(Category category){
+    public static CategoryDTO fromEntity(Category category){
         if(category == null) {
             //Throw an exception
             return null;
