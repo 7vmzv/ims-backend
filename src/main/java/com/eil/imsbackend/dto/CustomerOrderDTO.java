@@ -23,10 +23,9 @@ public class CustomerOrderDTO {
     private Instant orderDate;
     private CustomerDTO customer;
 
-    @JsonIgnore
     private List<CustomerOrderLineDTO> customerOrderLines;
 
-    public CustomerOrderDTO fromEntity(CustomerOrder customerOrder) {
+    public static CustomerOrderDTO fromEntity(CustomerOrder customerOrder) {
         if (customerOrder == null) {
             return null;
         }
@@ -38,7 +37,7 @@ public class CustomerOrderDTO {
                 .build();
     }
 
-    public CustomerOrder toEntity(CustomerOrderDTO customerOrderDTO) {
+    public static CustomerOrder toEntity(CustomerOrderDTO customerOrderDTO) {
         if(customerOrderDTO == null) {
             return null;
         }

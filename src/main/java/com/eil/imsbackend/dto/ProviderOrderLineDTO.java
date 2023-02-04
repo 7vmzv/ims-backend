@@ -17,7 +17,7 @@ public class ProviderOrderLineDTO {
     private Article article;
     private ProviderOrderDTO providerOrder;
 
-    public ProviderOrderLineDTO fromEntity(ProviderOrderLine providerOrderLine) {
+    public static ProviderOrderLineDTO fromEntity(ProviderOrderLine providerOrderLine) {
         if(providerOrderLine == null) {
             return null;
         }
@@ -27,7 +27,7 @@ public class ProviderOrderLineDTO {
                 .build();
     }
 
-    public ProviderOrderLine toEntity(ProviderOrderLineDTO providerOrderLineDTO) {
+    public static ProviderOrderLine toEntity(ProviderOrderLineDTO providerOrderLineDTO) {
         if(providerOrderLineDTO == null) {
             return null;
         }

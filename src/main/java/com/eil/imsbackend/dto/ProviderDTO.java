@@ -29,7 +29,7 @@ public class ProviderDTO {
     @JsonIgnore
     private List<ProviderOrderDTO> providerOrders;
 
-    public ProviderDTO fromEntity(Provider provider) {
+    public static ProviderDTO fromEntity(Provider provider) {
         if(provider == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public class ProviderDTO {
                 .build();
     }
 
-    public Provider toEntity(ProviderDTO companyDTO) {
+    public static Provider toEntity(ProviderDTO companyDTO) {
         if(companyDTO == null) {
             return null;
         }

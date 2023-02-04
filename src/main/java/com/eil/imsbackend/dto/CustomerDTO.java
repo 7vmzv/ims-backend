@@ -34,7 +34,7 @@ public class CustomerDTO {
     @JsonIgnore
     private List<CustomerOrderDTO> customerOrders;
 
-    public CustomerDTO fromEntity(Customer company) {
+    public static CustomerDTO fromEntity(Customer company) {
         if(company == null) {
             return null;
         }
@@ -48,7 +48,7 @@ public class CustomerDTO {
                 .build();
     }
 
-    public Customer toEntity(CustomerDTO companyDTO) {
+    public static Customer toEntity(CustomerDTO companyDTO) {
         if(companyDTO == null) {
             return null;
         }

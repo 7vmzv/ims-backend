@@ -25,7 +25,7 @@ public class RoleDTO {
     @JsonIgnore
     private List<UserDTO> users;
 
-    public RoleDTO fromEntity(Role role) {
+    public static RoleDTO fromEntity(Role role) {
         if(role == null) {
             return null;
         }
@@ -36,7 +36,7 @@ public class RoleDTO {
                 .build();
     }
 
-    public Role toEntity(RoleDTO roleDTO) {
+    public static Role toEntity(RoleDTO roleDTO) {
         if(roleDTO == null) {
             return null;
         }

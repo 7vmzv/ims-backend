@@ -25,7 +25,7 @@ public class CompanyDTO {
     private String email;
     private String phoneNumber;
 
-    public CompanyDTO fromEntity(Company company) {
+    public static CompanyDTO fromEntity(Company company) {
         if(company == null) {
             return null;
         }
@@ -41,7 +41,7 @@ public class CompanyDTO {
                 .build();
     }
 
-    public Company toEntity(CompanyDTO companyDTO) {
+    public static Company toEntity(CompanyDTO companyDTO) {
         if(companyDTO == null) {
             return null;
         }

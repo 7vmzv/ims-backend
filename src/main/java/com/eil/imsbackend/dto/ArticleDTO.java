@@ -42,7 +42,7 @@ public class ArticleDTO {
                 .build();
     }
 
-    public Article toEntity(ArticleDTO articleDTO) {
+    public static Article toEntity(ArticleDTO articleDTO) {
         if(articleDTO == null) {
             return null;
         }

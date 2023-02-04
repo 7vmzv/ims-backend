@@ -29,7 +29,7 @@ public class UserDTO {
 
     private RoleDTO role;
     
-    public UserDTO fromEntity(User user) {
+    public static UserDTO fromEntity(User user) {
         if(user == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public class UserDTO {
                 .build();
     }
 
-    public User toEntity(UserDTO companyDTO) {
+    public static User toEntity(UserDTO companyDTO) {
         if(companyDTO == null) {
             return null;
         }

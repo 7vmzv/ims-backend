@@ -25,7 +25,7 @@ public class StkMvtDTO {
 
     private int mvtType;
 
-    public StkMvtDTO fromEntity(StkMvt stkMvt) {
+    public static StkMvtDTO fromEntity(StkMvt stkMvt) {
         if(stkMvt == null) {
             return null;
         }
@@ -37,7 +37,7 @@ public class StkMvtDTO {
                 .build();
     }
 
-    public StkMvt toEntity(StkMvtDTO stkMvtDTO) {
+    public static StkMvt toEntity(StkMvtDTO stkMvtDTO) {
         if(stkMvtDTO == null) {
             return null;
         }
