@@ -26,7 +26,7 @@ public class PurchaseDTO {
     @JsonIgnore
     private List<PurchaseLineDTO> purchaseLines;
 
-    public PurchaseDTO fromEntity(Purchase purchase) {
+    public static PurchaseDTO fromEntity(Purchase purchase) {
         if(purchase == null) {
             return null;
         }
@@ -37,7 +37,7 @@ public class PurchaseDTO {
                 .build();
     }
 
-    public Purchase toEntity(PurchaseDTO purchaseDTO) {
+    public static Purchase toEntity(PurchaseDTO purchaseDTO) {
         if(purchaseDTO == null) {
             return null;
         }

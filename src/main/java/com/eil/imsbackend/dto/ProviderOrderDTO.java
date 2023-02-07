@@ -30,7 +30,7 @@ public class ProviderOrderDTO {
     @JsonIgnore
     private List<ProviderOrderLineDTO> providerOrderLines;
 
-    public ProviderOrderDTO fromEntity(ProviderOrder providerOrder) {
+    public static ProviderOrderDTO fromEntity(ProviderOrder providerOrder) {
         if (providerOrder == null) {
             return null;
         }
@@ -42,7 +42,7 @@ public class ProviderOrderDTO {
                 .build();
     }
 
-    public ProviderOrder toEntity(ProviderOrderDTO providerOrderDTO) {
+    public static ProviderOrder toEntity(ProviderOrderDTO providerOrderDTO) {
         if(providerOrderDTO == null) {
             return null;
         }

@@ -8,6 +8,7 @@ import com.eil.imsbackend.exception.InvalidEntityException;
 import com.eil.imsbackend.repository.ArticleRepository;
 import com.eil.imsbackend.services.ArticleService;
 import com.eil.imsbackend.validator.ArticleValidator;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,16 +20,11 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
+@AllArgsConstructor
 public class ArticleServiceImpl implements ArticleService {
 
     private ArticleRepository articleRepository;
     private ArticleValidator articleValidator;
-
-    @Autowired
-    public ArticleServiceImpl(ArticleRepository articleRepository, ArticleValidator articleValidator) {
-        this.articleRepository = articleRepository;
-        this.articleValidator = articleValidator;
-    }
 
     @Override
     public ArticleDTO save(ArticleDTO articleDTO) {

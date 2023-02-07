@@ -34,7 +34,7 @@ public class CategoryDTO {
     }
 
     //CategoryDTO -> Category
-    public Category toEntity(CategoryDTO categoryDTO) {
+    public static Category toEntity(CategoryDTO categoryDTO) {
         if(categoryDTO == null) {
             //Throw an exception
             return null;

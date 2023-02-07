@@ -21,7 +21,7 @@ public class PurchaseLineDTO {
     private PurchaseDTO purchaseDTO;
     private BigDecimal quantity;
 
-    public PurchaseLineDTO fromEntity(PurchaseLine purchaseLine) {
+    public static PurchaseLineDTO fromEntity(PurchaseLine purchaseLine) {
         if(purchaseLine == null) {
             return null;
         }
@@ -32,7 +32,7 @@ public class PurchaseLineDTO {
                 .build();
     }
 
-    public PurchaseLine toEntity(PurchaseLineDTO purchaseDTO) {
+    public static PurchaseLine toEntity(PurchaseLineDTO purchaseDTO) {
         if(purchaseDTO == null) {
             return null;
         }
